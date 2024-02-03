@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        #signupFormContainer {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            font-size: 16px;
+            border-radius: 20px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+
+        button[type="submit"] {
+            background-color: #fdc647;
+            color: #fff;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            width: 100%;
+            padding: 10px;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            font-size: 16px;
+            border-radius: 20px;
+            border: none;
+            box-sizing: border-box;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #e97c0f;
+        }
+
+        #message {
+            margin-top: 10px;
+            text-align: center;
+        }
+        .google-signin-button {
+            display: block;
+            background-color: #fdc647;
+            text-align: center;
+            cursor: pointer;
+            margin-top: 10px;
+            width: 100%;
+            color: #fff;
+            padding: 10px;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            font-size: 16px;
+            border-radius: 20px;
+            border: none;
+            box-sizing: border-box;
+        }
+        .google-signin-button img {
+            width: 20px;
+            height: 20px;
+            vertical-align: middle;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="signupFormContainer">
+        <h1>Sign Up</h1>
+        <form id="signupForm">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit">Sign Up</button>
+        </form>
+        <button class="google-signin-button" onclick="signInWithGoogle()">
+          <img src="https://cdn-teams-slug.flaticon.com/google.jpg"/>Sign Up with Google</button>
+        <div class="signup-link">
+        <div id="message"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -14,6 +14,26 @@
             padding: 0;
             background-color: #f0f0f0;
         }
+        header {
+  background-color: #fff;
+  color: #333;
+  padding: 15px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  max-width: 170px;
+  height: auto;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+
+
         .container {
             max-width: 400px;
             height: 500px;
@@ -76,6 +96,18 @@
         }
 </style>
 <body>
+  <header>
+    <img class="logo" src="Stop and Chop.png"/>
+    <nav>
+      <ul id="nav-list">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#search">Search</a></li> 
+      </ul>
+    </nav>
+  </header>
   <div class="container">
     <h2>Login</h2>
     <form id="loginForm" action="" method="post">
